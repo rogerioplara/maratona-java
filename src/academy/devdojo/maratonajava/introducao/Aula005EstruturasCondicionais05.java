@@ -31,5 +31,18 @@ public class Aula005EstruturasCondicionais05 {
                 System.out.println("Digite um número de 1 a 7");
                 break;
         }
+
+        char sexo = 'M';
+        switch (sexo) {
+            case 'M':
+                System.out.println("Masculino");
+                break;
+            case 'F':
+                System.out.println("Feminino");
+                break;
+            default:
+                System.out.println("Opção inválida");
+                break;
+        }
     }
 }
