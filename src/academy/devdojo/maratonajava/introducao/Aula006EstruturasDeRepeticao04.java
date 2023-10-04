@@ -25,7 +25,7 @@ public class Aula006EstruturasDeRepeticao04 {
         for (int parcela = 1; parcela <= valorTotal; parcela++){
             double valorParcela = valorTotal / parcela;
             if (valorParcela < 1000) {
-                break;
+                continue;
             }
             System.out.println("Parcela " + parcela + " R$"+valorParcela);
         }
