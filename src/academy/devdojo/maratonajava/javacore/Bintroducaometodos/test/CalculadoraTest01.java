@@ -8,7 +8,12 @@ public class CalculadoraTest01 {
 
         calc.somaDoisNumeros();
         calc.subtraiDoisNumeros();
-        
+        calc.multiplicaDoisNumeros(10, 20);
+
+        double divisao = calc.divideDoisNumeros(10, 20);
+        System.out.println(divisao);
+        System.out.println(calc.divideDoisNumeros(10, 0));
+
         System.out.println("Finalizando CalculadoraTest01");
     }
 }
