@@ -14,11 +14,11 @@ public class Funcionario {
     }
 
     public double mediaSalarios() {
-        double soma = 0;
+        double media = 0;
         for (double salario : salarios) {
-            soma += salario / salarios.length;
+            media += salario / salarios.length;
         }
-        return soma;
+        return media;
     }
 
     @Override
