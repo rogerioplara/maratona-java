@@ -1,7 +1,5 @@
 package academy.devdojo.maratonajava.introducao;
 
-import java.sql.SQLOutput;
-
 public class Aula002TiposPrimitivos {
     public static void main(String[] args) {
         // int, double, float, char, byte, short, long, boolean
@@ -13,11 +11,11 @@ public class Aula002TiposPrimitivos {
         short idadeShort = 10;
         boolean verdadeiro = true;
         boolean falso = false;
-        char caractere = 65; //traduz para a tabela ASCII
-        char caractere2 = '\u0041'; //traduz para a tabela UNICODE
+        char caractere = 65; // traduz para a tabela ASCII
+        char caractere2 = '\u0041'; // traduz para a tabela UNICODE
 
-        //tipos primitivos, com exceção do boolean, são numéricos
-        //o caractere também é numérico;
+        // tipos primitivos, com exceção do boolean, são numéricos
+        // o caractere também é numérico;
 
         String nome = "Goku";
 
