@@ -1,9 +1,9 @@
-package academy.devdojo.maratonajava.javacore.Fmodificadoresestaticos.domain;
+package academy.devdojo.maratonajava.javacore.Fmodificadoresestaticos.dominio;
 
 public class Carro {
     private String nome;
     private double velocidadeMaxima;
-    public static double velocidadeLimite = 250;
+    private static double velocidadeLimite = 250;
 
     public void imprime() {
         System.out.println("---------");
@@ -15,6 +15,19 @@ public class Carro {
     public Carro(String nome, double velocidadeMaxima) {
         this.nome = nome;
         this.velocidadeMaxima = velocidadeMaxima;
+    }
+
+    /*
+    Métodos estáticos
+    this. faz referência a instância
+    métodos estáticos só podem acessar atributos estáticos
+     */
+    public static void setVelocidadeLimite(double velocidadeLimite) {
+        Carro.velocidadeLimite = velocidadeLimite;
+    }
+
+    public static double getVelocidadeLimite() {
+        return velocidadeLimite;
     }
 
     public String getNome() {
@@ -32,5 +45,5 @@ public class Carro {
     public void setVelocidadeMaxima(double velocidadeMaxima) {
         this.velocidadeMaxima = velocidadeMaxima;
     }
-    
+
 }
