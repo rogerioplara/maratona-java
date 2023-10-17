@@ -2,7 +2,6 @@ package academy.devdojo.maratonajava.javacore.Gassociacao.dominio;
 
 public class Escola {
     private String nome;
-
     private Professor[] professores;
 
     public Escola(String nome) {
@@ -16,11 +15,11 @@ public class Escola {
 
     public void imprime() {
         System.out.println(this.nome);
-        if (professores != null) return;
+        // Caso o professor seja nulo, retorna - isso pode ocorrer se for chamado o método imprime antes de criar o professor
+        if (professores == null) return;
         for (Professor professor : professores) {
             System.out.println(professor.getNome());
         }
-
     }
 
 
